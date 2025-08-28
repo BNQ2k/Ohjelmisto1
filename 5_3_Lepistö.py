@@ -8,6 +8,6 @@ else:
             on_alkuluku = False
             break
     if on_alkuluku:
-        print("Luku ei ole alkuluku.")
+        print("Luku on alkuluku.")
     else:
         print("Luku ei ole alkuluku.")
