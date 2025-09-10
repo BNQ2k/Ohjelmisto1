@@ -1,21 +1,7 @@
-def summa(lista):
-    return sum(lista)
-
-def main():
-    luvut = []
-    print("Syötä kokonaislukuja yksi kerrallaan. Enter ilman lukua lopettaa ohjelman.")
-    while True:
-        syote = input("Anna luku: ")
-        if syote == "":
-           break
-        try:
-            luku = int(syote)
-            luvut.append(luku)
-        except ValueError:
-            print("Virheellinen syöte. Anna kokonaisluku.")
-    yhteensa = summa(luvut)
-    print(f"Listan summa on {yhteensa}.")
-
-
-
-main()
+def funktio(lista):
+    summa = 0
+    for i in lista:
+        summa += i
+    return summa
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(funktio(lista))
